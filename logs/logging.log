@@ -1,1 +1,125 @@
 2025-02-26 11:45:04,008: INFO: main: Welcome to our custom logging data science
+2025-02-26 13:17:26,644: INFO: common: Reading yaml file from config\config.yaml
+2025-02-26 13:17:26,648: INFO: common: Reading yaml file from params.yaml
+2025-02-26 13:18:33,725: INFO: common: Reading yaml file from config\config.yaml
+2025-02-26 13:18:33,728: INFO: common: Reading yaml file from params.yaml
+2025-02-26 13:18:57,374: INFO: common: Reading yaml file from config\config.yaml
+2025-02-26 13:18:57,379: INFO: common: Reading yaml file from params.yaml
+2025-02-26 13:19:18,323: INFO: common: Reading yaml file from config\config.yaml
+2025-02-26 13:19:18,326: INFO: common: Reading yaml file from params.yaml
+2025-02-26 13:19:18,330: INFO: common: Reading yaml file from schema.yaml
+2025-02-26 13:19:18,335: INFO: common: Created directory: artifacts
+2025-02-26 13:19:18,338: INFO: common: Created directory: artifacts/data_ingestion
+2025-02-26 13:20:12,632: INFO: common: Reading yaml file from config\config.yaml
+2025-02-26 13:20:12,637: INFO: common: Reading yaml file from params.yaml
+2025-02-26 13:20:12,640: INFO: common: Reading yaml file from schema.yaml
+2025-02-26 13:20:12,644: INFO: common: Created directory: artifacts
+2025-02-26 13:20:12,648: INFO: common: Created directory: artifacts/data_ingestion
+2025-02-26 13:20:14,229: INFO: 3462016057: artifacts/data_ingestion/data.zip downloaded successfully, with info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 25DC:37153E:10201C5:124684C:67BF06FD
+Accept-Ranges: bytes
+Date: Wed, 26 Feb 2025 12:20:14 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad22069-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1740572414.994016,VS0,VE218
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 0a95077cb1ff60a3557c4a7fdbe71503b29673bd
+Expires: Wed, 26 Feb 2025 12:25:14 GMT
+Source-Age: 0
+
+
+2025-02-26 15:59:05,013: INFO: main: >>>>>> Stage Data Ingestion Stage started <<<<<<
+2025-02-26 15:59:05,016: INFO: common: Reading yaml file from config\config.yaml
+2025-02-26 15:59:05,017: INFO: common: Reading yaml file from params.yaml
+2025-02-26 15:59:05,019: INFO: common: Reading yaml file from schema.yaml
+2025-02-26 15:59:05,021: INFO: common: Created directory: artifacts
+2025-02-26 15:59:05,023: INFO: common: Created directory: artifacts/data_ingestion
+2025-02-26 15:59:07,761: INFO: data_ingestion: artifacts/data_ingestion/data.zip downloaded successfully, with info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: B7FD:390EFE:9090B:9F040:67BF2C3A
+Accept-Ranges: bytes
+Date: Wed, 26 Feb 2025 14:59:07 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad2200095-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1740581948.574298,VS0,VE173
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: a4760ade08d94cb6909b08bd757eff59be2baa41
+Expires: Wed, 26 Feb 2025 15:04:07 GMT
+Source-Age: 0
+
+
+2025-02-26 15:59:07,781: INFO: main: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+2025-02-27 16:45:34,681: INFO: common: Reading yaml file from config\config.yaml
+2025-02-27 16:45:34,698: INFO: common: Reading yaml file from params.yaml
+2025-02-27 16:45:34,704: INFO: common: Reading yaml file from schema.yaml
+2025-02-27 16:45:34,709: INFO: common: Created directory: artifacts
+2025-02-27 16:45:34,715: INFO: common: Created directory: artifacts/data_validation
+2025-02-27 16:48:13,213: INFO: common: Reading yaml file from config\config.yaml
+2025-02-27 16:48:13,219: INFO: common: Reading yaml file from params.yaml
+2025-02-27 16:48:13,230: INFO: common: Reading yaml file from schema.yaml
+2025-02-27 16:48:13,233: INFO: common: Created directory: artifacts
+2025-02-27 16:48:13,238: INFO: common: Created directory: artifacts/data_validation
+2025-02-27 17:06:47,487: INFO: main: >>>>>> Stage Data Ingestion Stage started <<<<<<
+2025-02-27 17:06:47,490: INFO: common: Reading yaml file from config\config.yaml
+2025-02-27 17:06:47,491: INFO: common: Reading yaml file from params.yaml
+2025-02-27 17:06:47,494: INFO: common: Reading yaml file from schema.yaml
+2025-02-27 17:06:47,495: INFO: common: Created directory: artifacts
+2025-02-27 17:06:47,497: INFO: common: Created directory: artifacts/data_ingestion
+2025-02-27 17:06:47,499: INFO: data_ingestion: File already exists
+2025-02-27 17:06:47,511: INFO: main: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+2025-02-27 17:06:47,513: INFO: main: >>>>>> Stage Data Validation Stage started <<<<<<
+2025-02-27 17:06:47,515: ERROR: main: 'DataValidationTrainingPipeline' object has no attribute 'initiate_data_validation'
+Traceback (most recent call last):
+  File "C:\Users\cmatias\Desktop\MLOPS\datascienceproject\main.py", line 19, in <module>
+    data_validation.initiate_data_validation()
+AttributeError: 'DataValidationTrainingPipeline' object has no attribute 'initiate_data_validation'
+2025-02-27 17:08:32,964: INFO: main: >>>>>> Stage Data Ingestion Stage started <<<<<<
+2025-02-27 17:08:32,967: INFO: common: Reading yaml file from config\config.yaml
+2025-02-27 17:08:32,969: INFO: common: Reading yaml file from params.yaml
+2025-02-27 17:08:32,975: INFO: common: Reading yaml file from schema.yaml
+2025-02-27 17:08:32,976: INFO: common: Created directory: artifacts
+2025-02-27 17:08:32,977: INFO: common: Created directory: artifacts/data_ingestion
+2025-02-27 17:08:32,978: INFO: data_ingestion: File already exists
+2025-02-27 17:08:32,987: INFO: main: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+2025-02-27 17:08:32,988: INFO: main: >>>>>> Stage Data Validation Stage started <<<<<<
+2025-02-27 17:08:32,992: INFO: common: Reading yaml file from config\config.yaml
+2025-02-27 17:08:32,993: INFO: common: Reading yaml file from params.yaml
+2025-02-27 17:08:32,996: INFO: common: Reading yaml file from schema.yaml
+2025-02-27 17:08:32,998: INFO: common: Created directory: artifacts
+2025-02-27 17:08:32,999: INFO: common: Created directory: artifacts/data_validation
+2025-02-27 17:08:33,032: INFO: main: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========x
