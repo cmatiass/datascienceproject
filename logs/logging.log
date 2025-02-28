@@ -123,3 +123,90 @@ x==========x
 2025-02-27 17:08:33,032: INFO: main: >>>>>> Stage Data Validation Stage completed <<<<<<
 
 x==========x
+2025-02-28 11:27:32,629: INFO: common: Reading yaml file from config\config.yaml
+2025-02-28 11:27:32,636: INFO: common: Reading yaml file from params.yaml
+2025-02-28 11:27:32,645: INFO: common: Reading yaml file from schema.yaml
+2025-02-28 11:27:32,649: INFO: common: Created directory: artifacts
+2025-02-28 11:27:32,652: INFO: common: Created directory: artifacts/data_transformation
+2025-02-28 11:27:32,734: INFO: 2501812001: Data splitting is done.
+2025-02-28 11:27:32,737: INFO: 2501812001: Train shape: (1279, 12), Test shape: (320, 12)
+2025-02-28 11:56:02,445: INFO: main: >>>>>> Stage Data Ingestion Stage started <<<<<<
+2025-02-28 11:56:02,451: INFO: common: Reading yaml file from config\config.yaml
+2025-02-28 11:56:02,454: INFO: common: Reading yaml file from params.yaml
+2025-02-28 11:56:02,464: INFO: common: Reading yaml file from schema.yaml
+2025-02-28 11:56:02,465: INFO: common: Created directory: artifacts
+2025-02-28 11:56:02,467: INFO: common: Created directory: artifacts/data_ingestion
+2025-02-28 11:56:02,469: INFO: data_ingestion: File already exists
+2025-02-28 11:56:02,484: INFO: main: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+2025-02-28 11:56:02,487: INFO: main: >>>>>> Stage Data Validation Stage started <<<<<<
+2025-02-28 11:56:02,495: INFO: common: Reading yaml file from config\config.yaml
+2025-02-28 11:56:02,499: INFO: common: Reading yaml file from params.yaml
+2025-02-28 11:56:02,506: INFO: common: Reading yaml file from schema.yaml
+2025-02-28 11:56:02,508: INFO: common: Created directory: artifacts
+2025-02-28 11:56:02,511: INFO: common: Created directory: artifacts/data_validation
+2025-02-28 11:56:02,576: INFO: main: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========x
+2025-02-28 11:56:02,578: INFO: main: >>>>>> Stage Data Transformation Stage started <<<<<<
+2025-02-28 11:56:02,580: ERROR: main: 'DataValidationTrainingPipeline' object has no attribute 'initiate_data_transformation'
+Traceback (most recent call last):
+  File "C:\Users\cmatias\Desktop\MLOPS\datascienceproject\main.py", line 30, in <module>
+    data_validation.initiate_data_transformation()
+AttributeError: 'DataValidationTrainingPipeline' object has no attribute 'initiate_data_transformation'
+2025-02-28 11:57:10,964: INFO: main: >>>>>> Stage Data Ingestion Stage started <<<<<<
+2025-02-28 11:57:10,971: INFO: common: Reading yaml file from config\config.yaml
+2025-02-28 11:57:10,974: INFO: common: Reading yaml file from params.yaml
+2025-02-28 11:57:10,981: INFO: common: Reading yaml file from schema.yaml
+2025-02-28 11:57:10,982: INFO: common: Created directory: artifacts
+2025-02-28 11:57:10,983: INFO: common: Created directory: artifacts/data_ingestion
+2025-02-28 11:57:10,984: INFO: data_ingestion: File already exists
+2025-02-28 11:57:10,993: INFO: main: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+2025-02-28 11:57:10,996: INFO: main: >>>>>> Stage Data Validation Stage started <<<<<<
+2025-02-28 11:57:11,003: INFO: common: Reading yaml file from config\config.yaml
+2025-02-28 11:57:11,005: INFO: common: Reading yaml file from params.yaml
+2025-02-28 11:57:11,009: INFO: common: Reading yaml file from schema.yaml
+2025-02-28 11:57:11,010: INFO: common: Created directory: artifacts
+2025-02-28 11:57:11,011: INFO: common: Created directory: artifacts/data_validation
+2025-02-28 11:57:11,043: INFO: main: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========x
+2025-02-28 11:57:11,043: INFO: main: >>>>>> Stage Data Transformation Stage started <<<<<<
+2025-02-28 11:57:11,044: ERROR: main: 'DataValidationTrainingPipeline' object has no attribute 'initiate_data_transformation'
+Traceback (most recent call last):
+  File "C:\Users\cmatias\Desktop\MLOPS\datascienceproject\main.py", line 30, in <module>
+    data_validation.initiate_data_transformation()
+AttributeError: 'DataValidationTrainingPipeline' object has no attribute 'initiate_data_transformation'
+2025-02-28 11:59:37,286: INFO: main: >>>>>> Stage Data Ingestion Stage started <<<<<<
+2025-02-28 11:59:37,291: INFO: common: Reading yaml file from config\config.yaml
+2025-02-28 11:59:37,292: INFO: common: Reading yaml file from params.yaml
+2025-02-28 11:59:37,295: INFO: common: Reading yaml file from schema.yaml
+2025-02-28 11:59:37,298: INFO: common: Created directory: artifacts
+2025-02-28 11:59:37,299: INFO: common: Created directory: artifacts/data_ingestion
+2025-02-28 11:59:37,300: INFO: data_ingestion: File already exists
+2025-02-28 11:59:37,308: INFO: main: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+2025-02-28 11:59:37,309: INFO: main: >>>>>> Stage Data Validation Stage started <<<<<<
+2025-02-28 11:59:37,313: INFO: common: Reading yaml file from config\config.yaml
+2025-02-28 11:59:37,315: INFO: common: Reading yaml file from params.yaml
+2025-02-28 11:59:37,320: INFO: common: Reading yaml file from schema.yaml
+2025-02-28 11:59:37,321: INFO: common: Created directory: artifacts
+2025-02-28 11:59:37,321: INFO: common: Created directory: artifacts/data_validation
+2025-02-28 11:59:37,347: INFO: main: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========x
+2025-02-28 11:59:37,348: INFO: main: >>>>>> Stage Data Transformation Stage started <<<<<<
+2025-02-28 11:59:37,352: INFO: common: Reading yaml file from config\config.yaml
+2025-02-28 11:59:37,353: INFO: common: Reading yaml file from params.yaml
+2025-02-28 11:59:37,357: INFO: common: Reading yaml file from schema.yaml
+2025-02-28 11:59:37,358: INFO: common: Created directory: artifacts
+2025-02-28 11:59:37,360: INFO: common: Created directory: artifacts/data_transformation
+2025-02-28 11:59:37,399: INFO: data_transformation: Data splitting is done.
+2025-02-28 11:59:37,400: INFO: data_transformation: Train shape: (1279, 12), Test shape: (320, 12)
+2025-02-28 11:59:37,401: INFO: main: >>>>>> Stage Data Transformation Stage completed <<<<<<
+
+x==========x
