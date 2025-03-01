@@ -210,3 +210,47 @@ x==========x
 2025-02-28 11:59:37,401: INFO: main: >>>>>> Stage Data Transformation Stage completed <<<<<<
 
 x==========x
+2025-03-01 12:53:16,897: INFO: common: Reading yaml file from config\config.yaml
+2025-03-01 12:53:16,906: INFO: common: Reading yaml file from params.yaml
+2025-03-01 12:53:16,916: INFO: common: Reading yaml file from schema.yaml
+2025-03-01 12:53:16,922: INFO: common: Created directory: artifacts
+2025-03-01 12:53:16,927: INFO: common: Created directory: artifacts/model_trainer
+2025-03-01 13:04:25,543: INFO: main: >>>>>> Stage Data Ingestion Stage started <<<<<<
+2025-03-01 13:04:25,549: INFO: common: Reading yaml file from config\config.yaml
+2025-03-01 13:04:25,552: INFO: common: Reading yaml file from params.yaml
+2025-03-01 13:04:25,556: INFO: common: Reading yaml file from schema.yaml
+2025-03-01 13:04:25,558: INFO: common: Created directory: artifacts
+2025-03-01 13:04:25,559: INFO: common: Created directory: artifacts/data_ingestion
+2025-03-01 13:04:25,570: INFO: data_ingestion: File already exists
+2025-03-01 13:04:25,582: INFO: main: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+2025-03-01 13:04:25,584: INFO: main: >>>>>> Stage Data Validation Stage started <<<<<<
+2025-03-01 13:04:25,589: INFO: common: Reading yaml file from config\config.yaml
+2025-03-01 13:04:25,593: INFO: common: Reading yaml file from params.yaml
+2025-03-01 13:04:25,598: INFO: common: Reading yaml file from schema.yaml
+2025-03-01 13:04:25,599: INFO: common: Created directory: artifacts
+2025-03-01 13:04:25,601: INFO: common: Created directory: artifacts/data_validation
+2025-03-01 13:04:25,629: INFO: main: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========x
+2025-03-01 13:04:25,630: INFO: main: >>>>>> Stage Data Transformation Stage started <<<<<<
+2025-03-01 13:04:25,636: INFO: common: Reading yaml file from config\config.yaml
+2025-03-01 13:04:25,639: INFO: common: Reading yaml file from params.yaml
+2025-03-01 13:04:25,643: INFO: common: Reading yaml file from schema.yaml
+2025-03-01 13:04:25,645: INFO: common: Created directory: artifacts
+2025-03-01 13:04:25,645: INFO: common: Created directory: artifacts/data_transformation
+2025-03-01 13:04:25,695: INFO: data_transformation: Data splitting is done.
+2025-03-01 13:04:25,697: INFO: data_transformation: Train shape: (1279, 12), Test shape: (320, 12)
+2025-03-01 13:04:25,698: INFO: main: >>>>>> Stage Data Transformation Stage completed <<<<<<
+
+x==========x
+2025-03-01 13:04:25,700: INFO: main: >>>>>> Stage Model Training Stage started <<<<<<
+2025-03-01 13:04:25,706: INFO: common: Reading yaml file from config\config.yaml
+2025-03-01 13:04:25,709: INFO: common: Reading yaml file from params.yaml
+2025-03-01 13:04:25,713: INFO: common: Reading yaml file from schema.yaml
+2025-03-01 13:04:25,715: INFO: common: Created directory: artifacts
+2025-03-01 13:04:25,718: INFO: common: Created directory: artifacts/model_trainer
+2025-03-01 13:04:25,735: INFO: main: >>>>>> Stage Model Training Stage completed <<<<<<
+
+x==========x
