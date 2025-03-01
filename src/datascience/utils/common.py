@@ -66,6 +66,22 @@ def load_json(path: Path) -> ConfigBox:
     return ConfigBox(content)
 
 @ensure_annotations
+def save_json(path: Path, data: dict):
+    """
+    Save a dictionary to a json file
+
+    Args:
+    path: Path to the json file
+    data: Dictionary to save
+
+    """
+    with open(path, "w") as f:
+        json.dump(data, f, indent=4)
+    logger.info(f"Json file saved to {path}")
+
+
+
+@ensure_annotations
 def save_bin(data: Any, path: Path):
     """
     Save a binary file

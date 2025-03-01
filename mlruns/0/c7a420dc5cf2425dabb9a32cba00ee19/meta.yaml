@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/cmatias/Desktop/MLOPS/datascienceproject/mlruns/0/c7a420dc5cf2425dabb9a32cba00ee19/artifacts
+end_time: 1740833754423
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c7a420dc5cf2425dabb9a32cba00ee19
+run_name: skittish-fowl-995
+run_uuid: c7a420dc5cf2425dabb9a32cba00ee19
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740833736969
+status: 3
+tags: []
+user_id: cmatias
