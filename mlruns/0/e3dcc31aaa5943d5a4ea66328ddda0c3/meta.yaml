@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/cmatias/Desktop/MLOPS/datascienceproject/mlruns/0/e3dcc31aaa5943d5a4ea66328ddda0c3/artifacts
+end_time: 1740855911645
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e3dcc31aaa5943d5a4ea66328ddda0c3
+run_name: beautiful-kite-841
+run_uuid: e3dcc31aaa5943d5a4ea66328ddda0c3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740855898129
+status: 3
+tags: []
+user_id: cmatias
