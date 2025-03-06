@@ -84,8 +84,10 @@ To replicate this project, follow these steps:
 - 💾 Joblib (for model serialization)
 - ⚙️ PyYAML (for configuration management)
 - 📜 Logging (for application logs)
+- 🐳 Docker (for containerization)
+- 🛠️ **DagsHub & MLFlow** (for experiment tracking and reproducibility)
 
-## How to Run
+## ▶️ How to Run
 To run the project locally:
 
 ```bash
@@ -107,5 +109,27 @@ python main.py
 python app.py
 ```
 
+## 🌐 How to Use the Web Application
+Once the application is running, follow these steps:
+
+1. **Access the main page**: Open your browser and go to `http://127.0.0.1:5000/`.
+2. **Train the model**: Navigate to `http://127.0.0.1:5000/train`. This will execute the full pipeline, from data ingestion to model training.
+3. **Return to the main page**: Go back to `http://127.0.0.1:5000/`.
+4. **Make a prediction**: Enter values for each variable in the form and click on the `Predict` button.
+5. **View the result**: The application will redirect you to `http://127.0.0.1:5000/predict`, where the predicted outcome will be displayed.
+
+## 📈 Experiment Tracking with DagsHub & MLFlow
+All executions of the model are tracked using **MLFlow** and are accessible through the **Experiments** section of **DagsHub**. This allows users to:
+- View all previous model runs and their respective parameters.
+- Compare performance metrics across different executions.
+- Access logs and artifacts stored from each experiment.
+
+This ensures full transparency, version control, and reproducibility of the ML workflow. 🚀📊
+
 ## 🤝 Contribution
 Contributions are welcome! Feel free to fork the repository, make modifications, and create a pull request.
+
+---
+
+This project serves as a template for well-structured Data Science projects, ensuring scalability and maintainability. 🚀✨
+
