@@ -537,3 +537,335 @@ x==========x
 2025-03-03 13:49:12,113: INFO: _internal: 192.168.1.134 - - [03/Mar/2025 13:49:12] "GET / HTTP/1.1" 200 -
 2025-03-03 13:49:12,157: INFO: _internal: 192.168.1.134 - - [03/Mar/2025 13:49:12] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -
 2025-03-03 13:49:20,094: INFO: _internal: 192.168.1.134 - - [03/Mar/2025 13:49:20] "POST /predict HTTP/1.1" 200 -
+2025-03-03 14:00:45,756: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.134:8080
+2025-03-03 14:00:45,758: INFO: _internal: [33mPress CTRL+C to quit[0m
+2025-03-03 14:00:49,760: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:00:49] "GET / HTTP/1.1" 200 -
+2025-03-03 14:00:49,951: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:00:49] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -
+2025-03-03 14:00:50,165: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:00:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-03 14:01:12,516: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:01:12] "POST /predict HTTP/1.1" 200 -
+2025-03-03 14:01:32,180: INFO: main: >>>>>> Stage Data Ingestion Stage started <<<<<<
+2025-03-03 14:01:32,184: INFO: common: Reading yaml file from config\config.yaml
+2025-03-03 14:01:32,186: INFO: common: Reading yaml file from params.yaml
+2025-03-03 14:01:32,189: INFO: common: Reading yaml file from schema.yaml
+2025-03-03 14:01:32,191: INFO: common: Created directory: artifacts
+2025-03-03 14:01:32,191: INFO: common: Created directory: artifacts/data_ingestion
+2025-03-03 14:01:32,192: INFO: data_ingestion: File already exists
+2025-03-03 14:01:32,200: INFO: main: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+2025-03-03 14:01:32,202: INFO: main: >>>>>> Stage Data Validation Stage started <<<<<<
+2025-03-03 14:01:32,206: INFO: common: Reading yaml file from config\config.yaml
+2025-03-03 14:01:32,209: INFO: common: Reading yaml file from params.yaml
+2025-03-03 14:01:32,215: INFO: common: Reading yaml file from schema.yaml
+2025-03-03 14:01:32,216: INFO: common: Created directory: artifacts
+2025-03-03 14:01:32,217: INFO: common: Created directory: artifacts/data_validation
+2025-03-03 14:01:32,241: INFO: main: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========x
+2025-03-03 14:01:32,242: INFO: main: >>>>>> Stage Data Transformation Stage started <<<<<<
+2025-03-03 14:01:32,251: INFO: common: Reading yaml file from config\config.yaml
+2025-03-03 14:01:32,255: INFO: common: Reading yaml file from params.yaml
+2025-03-03 14:01:32,262: INFO: common: Reading yaml file from schema.yaml
+2025-03-03 14:01:32,263: INFO: common: Created directory: artifacts
+2025-03-03 14:01:32,264: INFO: common: Created directory: artifacts/data_transformation
+2025-03-03 14:01:32,303: INFO: data_transformation: Data splitting is done.
+2025-03-03 14:01:32,304: INFO: data_transformation: Train shape: (1279, 12), Test shape: (320, 12)
+2025-03-03 14:01:32,305: INFO: main: >>>>>> Stage Data Transformation Stage completed <<<<<<
+
+x==========x
+2025-03-03 14:01:32,307: INFO: main: >>>>>> Stage Model Training Stage started <<<<<<
+2025-03-03 14:01:32,311: INFO: common: Reading yaml file from config\config.yaml
+2025-03-03 14:01:32,315: INFO: common: Reading yaml file from params.yaml
+2025-03-03 14:01:32,318: INFO: common: Reading yaml file from schema.yaml
+2025-03-03 14:01:32,319: INFO: common: Created directory: artifacts
+2025-03-03 14:01:32,319: INFO: common: Created directory: artifacts/model_trainer
+2025-03-03 14:01:32,332: INFO: main: >>>>>> Stage Model Training Stage completed <<<<<<
+
+x==========x
+2025-03-03 14:01:32,333: INFO: main: >>>>>> Stage Model Evaluation Stage started <<<<<<
+2025-03-03 14:01:32,339: INFO: common: Reading yaml file from config\config.yaml
+2025-03-03 14:01:32,341: INFO: common: Reading yaml file from params.yaml
+2025-03-03 14:01:32,344: INFO: common: Reading yaml file from schema.yaml
+2025-03-03 14:01:32,345: INFO: common: Created directory: artifacts
+2025-03-03 14:01:32,346: INFO: common: Created directory: artifacts/model_evaluation
+2025-03-03 14:01:33,781: INFO: common: Json file saved to artifacts\model_evaluation\metrics.json
+2025-03-03 14:01:44,489: INFO: main: >>>>>> Stage Model Evaluation Stage completed <<<<<<
+
+x==========x
+2025-03-03 14:01:45,197: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:01:45] "GET /train HTTP/1.1" 200 -
+2025-03-03 14:01:57,707: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:01:57] "GET / HTTP/1.1" 200 -
+2025-03-03 14:01:57,762: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:01:57] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -
+2025-03-03 14:02:15,635: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:02:15] "POST /predict HTTP/1.1" 200 -
+2025-03-03 14:02:37,962: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:02:37] "GET / HTTP/1.1" 200 -
+2025-03-03 14:02:38,002: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:02:38] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -
+2025-03-03 14:02:39,724: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:02:39] "GET / HTTP/1.1" 200 -
+2025-03-03 14:02:39,774: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:02:39] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -
+2025-03-03 14:21:59,603: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.134:8080
+2025-03-03 14:21:59,606: INFO: _internal: [33mPress CTRL+C to quit[0m
+2025-03-03 14:22:05,403: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:22:05] "GET / HTTP/1.1" 200 -
+2025-03-03 14:22:05,555: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:22:05] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -
+2025-03-03 14:22:33,075: INFO: main: >>>>>> Stage Data Ingestion Stage started <<<<<<
+2025-03-03 14:22:33,085: INFO: common: Reading yaml file from config\config.yaml
+2025-03-03 14:22:33,097: INFO: common: Reading yaml file from params.yaml
+2025-03-03 14:22:33,106: INFO: common: Reading yaml file from schema.yaml
+2025-03-03 14:22:33,109: INFO: common: Created directory: artifacts
+2025-03-03 14:22:33,113: INFO: common: Created directory: artifacts/data_ingestion
+2025-03-03 14:22:36,308: INFO: data_ingestion: artifacts/data_ingestion/data.zip downloaded successfully, with info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: FE48:1D364:EF857B:112304B:67C5AD16
+Accept-Ranges: bytes
+Date: Mon, 03 Mar 2025 13:22:32 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad22067-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1741008152.270839,VS0,VE226
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 477246ee94035527643cd2dac2eedebbee0c8f79
+Expires: Mon, 03 Mar 2025 13:27:32 GMT
+Source-Age: 0
+
+
+2025-03-03 14:22:36,350: INFO: main: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+2025-03-03 14:22:36,352: INFO: main: >>>>>> Stage Data Validation Stage started <<<<<<
+2025-03-03 14:22:36,367: INFO: common: Reading yaml file from config\config.yaml
+2025-03-03 14:22:36,371: INFO: common: Reading yaml file from params.yaml
+2025-03-03 14:22:36,380: INFO: common: Reading yaml file from schema.yaml
+2025-03-03 14:22:36,383: INFO: common: Created directory: artifacts
+2025-03-03 14:22:36,386: INFO: common: Created directory: artifacts/data_validation
+2025-03-03 14:22:36,442: INFO: main: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========x
+2025-03-03 14:22:36,444: INFO: main: >>>>>> Stage Data Transformation Stage started <<<<<<
+2025-03-03 14:22:36,459: INFO: common: Reading yaml file from config\config.yaml
+2025-03-03 14:22:36,464: INFO: common: Reading yaml file from params.yaml
+2025-03-03 14:22:36,474: INFO: common: Reading yaml file from schema.yaml
+2025-03-03 14:22:36,475: INFO: common: Created directory: artifacts
+2025-03-03 14:22:36,478: INFO: common: Created directory: artifacts/data_transformation
+2025-03-03 14:22:36,554: INFO: data_transformation: Data splitting is done.
+2025-03-03 14:22:36,554: INFO: data_transformation: Train shape: (1279, 12), Test shape: (320, 12)
+2025-03-03 14:22:36,556: INFO: main: >>>>>> Stage Data Transformation Stage completed <<<<<<
+
+x==========x
+2025-03-03 14:22:36,557: INFO: main: >>>>>> Stage Model Training Stage started <<<<<<
+2025-03-03 14:22:36,570: INFO: common: Reading yaml file from config\config.yaml
+2025-03-03 14:22:36,577: INFO: common: Reading yaml file from params.yaml
+2025-03-03 14:22:36,581: INFO: common: Reading yaml file from schema.yaml
+2025-03-03 14:22:36,583: INFO: common: Created directory: artifacts
+2025-03-03 14:22:36,584: INFO: common: Created directory: artifacts/model_trainer
+2025-03-03 14:22:36,637: INFO: main: >>>>>> Stage Model Training Stage completed <<<<<<
+
+x==========x
+2025-03-03 14:22:36,639: INFO: main: >>>>>> Stage Model Evaluation Stage started <<<<<<
+2025-03-03 14:22:36,652: INFO: common: Reading yaml file from config\config.yaml
+2025-03-03 14:22:36,658: INFO: common: Reading yaml file from params.yaml
+2025-03-03 14:22:36,664: INFO: common: Reading yaml file from schema.yaml
+2025-03-03 14:22:36,666: INFO: common: Created directory: artifacts
+2025-03-03 14:22:36,674: INFO: common: Created directory: artifacts/model_evaluation
+2025-03-03 14:22:39,724: INFO: common: Json file saved to artifacts\model_evaluation\metrics.json
+2025-03-03 14:23:00,680: INFO: main: >>>>>> Stage Model Evaluation Stage completed <<<<<<
+
+x==========x
+2025-03-03 14:23:01,849: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:23:01] "GET /train HTTP/1.1" 200 -
+2025-03-03 14:23:25,514: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:23:25] "GET / HTTP/1.1" 200 -
+2025-03-03 14:23:25,578: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:23:25] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -
+2025-03-03 14:23:37,275: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:23:37] "POST /predict HTTP/1.1" 200 -
+2025-03-03 14:24:02,361: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:24:02] "GET / HTTP/1.1" 200 -
+2025-03-03 14:24:02,413: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:24:02] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -
+2025-03-03 14:24:09,597: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:24:09] "POST /predict HTTP/1.1" 200 -
+2025-03-03 14:26:27,072: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:26:27] "GET / HTTP/1.1" 200 -
+2025-03-03 14:26:27,201: INFO: _internal: 127.0.0.1 - - [03/Mar/2025 14:26:27] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -
+2025-03-05 17:01:35,761: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.53.13.55:8080
+2025-03-05 17:01:35,762: INFO: _internal: [33mPress CTRL+C to quit[0m
+2025-03-05 17:01:48,158: INFO: _internal: 127.0.0.1 - - [05/Mar/2025 17:01:48] "GET / HTTP/1.1" 200 -
+2025-03-05 17:01:48,252: INFO: _internal: 127.0.0.1 - - [05/Mar/2025 17:01:48] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -
+2025-03-05 17:01:48,556: INFO: _internal: 127.0.0.1 - - [05/Mar/2025 17:01:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-05 17:01:59,026: INFO: _internal: 127.0.0.1 - - [05/Mar/2025 17:01:59] "POST /predict HTTP/1.1" 200 -
+2025-03-05 17:02:37,905: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.53.13.55:8080
+2025-03-05 17:02:37,906: INFO: _internal: [33mPress CTRL+C to quit[0m
+2025-03-05 17:02:45,422: INFO: _internal: 127.0.0.1 - - [05/Mar/2025 17:02:45] "GET / HTTP/1.1" 200 -
+2025-03-05 17:02:45,644: INFO: _internal: 127.0.0.1 - - [05/Mar/2025 17:02:45] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -
+2025-03-05 17:02:53,490: INFO: _internal: 127.0.0.1 - - [05/Mar/2025 17:02:53] "POST /predict HTTP/1.1" 200 -
+2025-03-06 15:05:52,230: INFO: main: >>>>>> Stage Data Ingestion Stage started <<<<<<
+2025-03-06 15:05:52,234: INFO: common: Reading yaml file from config\config.yaml
+2025-03-06 15:05:52,235: INFO: common: Reading yaml file from params.yaml
+2025-03-06 15:05:52,238: INFO: common: Reading yaml file from schema.yaml
+2025-03-06 15:05:52,239: INFO: common: Created directory: artifacts
+2025-03-06 15:05:52,240: INFO: common: Created directory: artifacts/data_ingestion
+2025-03-06 15:05:53,668: INFO: data_ingestion: artifacts/data_ingestion/data.zip downloaded successfully, with info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: AAFE:36112D:710A6C:7EC619:67C9ABBF
+Accept-Ranges: bytes
+Date: Thu, 06 Mar 2025 14:05:53 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad22080-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1741269953.480293,VS0,VE191
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: a7d7d74c96599314231fd485beefccb814128d02
+Expires: Thu, 06 Mar 2025 14:10:53 GMT
+Source-Age: 0
+
+
+2025-03-06 15:05:53,681: INFO: main: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+2025-03-06 15:05:53,683: INFO: main: >>>>>> Stage Data Validation Stage started <<<<<<
+2025-03-06 15:05:53,687: INFO: common: Reading yaml file from config\config.yaml
+2025-03-06 15:05:53,690: INFO: common: Reading yaml file from params.yaml
+2025-03-06 15:05:53,693: INFO: common: Reading yaml file from schema.yaml
+2025-03-06 15:05:53,695: INFO: common: Created directory: artifacts
+2025-03-06 15:05:53,696: INFO: common: Created directory: artifacts/data_validation
+2025-03-06 15:05:53,738: INFO: main: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========x
+2025-03-06 15:05:53,740: INFO: main: >>>>>> Stage Data Transformation Stage started <<<<<<
+2025-03-06 15:05:53,744: INFO: common: Reading yaml file from config\config.yaml
+2025-03-06 15:05:53,746: INFO: common: Reading yaml file from params.yaml
+2025-03-06 15:05:53,750: INFO: common: Reading yaml file from schema.yaml
+2025-03-06 15:05:53,753: INFO: common: Created directory: artifacts
+2025-03-06 15:05:53,757: INFO: common: Created directory: artifacts/data_transformation
+2025-03-06 15:05:53,802: INFO: data_transformation: Data splitting is done.
+2025-03-06 15:05:53,803: INFO: data_transformation: Train shape: (1279, 12), Test shape: (320, 12)
+2025-03-06 15:05:53,804: INFO: main: >>>>>> Stage Data Transformation Stage completed <<<<<<
+
+x==========x
+2025-03-06 15:05:53,804: INFO: main: >>>>>> Stage Model Training Stage started <<<<<<
+2025-03-06 15:05:53,807: INFO: common: Reading yaml file from config\config.yaml
+2025-03-06 15:05:53,809: INFO: common: Reading yaml file from params.yaml
+2025-03-06 15:05:53,812: INFO: common: Reading yaml file from schema.yaml
+2025-03-06 15:05:53,813: INFO: common: Created directory: artifacts
+2025-03-06 15:05:53,815: INFO: common: Created directory: artifacts/model_trainer
+2025-03-06 15:05:53,836: INFO: main: >>>>>> Stage Model Training Stage completed <<<<<<
+
+x==========x
+2025-03-06 15:05:53,839: INFO: main: >>>>>> Stage Model Evaluation Stage started <<<<<<
+2025-03-06 15:05:53,846: INFO: common: Reading yaml file from config\config.yaml
+2025-03-06 15:05:53,848: INFO: common: Reading yaml file from params.yaml
+2025-03-06 15:05:53,854: INFO: common: Reading yaml file from schema.yaml
+2025-03-06 15:05:53,858: INFO: common: Created directory: artifacts
+2025-03-06 15:05:53,860: INFO: common: Created directory: artifacts/model_evaluation
+2025-03-06 15:05:55,490: INFO: common: Json file saved to artifacts\model_evaluation\metrics.json
+2025-03-06 15:06:05,310: INFO: main: >>>>>> Stage Model Evaluation Stage completed <<<<<<
+
+x==========x
+2025-03-06 15:06:36,200: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.53.13.55:8080
+2025-03-06 15:06:36,202: INFO: _internal: [33mPress CTRL+C to quit[0m
+2025-03-06 15:06:40,835: INFO: _internal: 127.0.0.1 - - [06/Mar/2025 15:06:40] "GET / HTTP/1.1" 200 -
+2025-03-06 15:06:40,914: INFO: _internal: 127.0.0.1 - - [06/Mar/2025 15:06:40] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -
+2025-03-06 15:06:41,242: INFO: _internal: 127.0.0.1 - - [06/Mar/2025 15:06:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-06 15:26:36,018: INFO: main: >>>>>> Stage Data Ingestion Stage started <<<<<<
+2025-03-06 15:26:36,022: INFO: common: Reading yaml file from config\config.yaml
+2025-03-06 15:26:36,024: INFO: common: Reading yaml file from params.yaml
+2025-03-06 15:26:36,026: INFO: common: Reading yaml file from schema.yaml
+2025-03-06 15:26:36,028: INFO: common: Created directory: artifacts
+2025-03-06 15:26:36,029: INFO: common: Created directory: artifacts/data_ingestion
+2025-03-06 15:26:37,399: INFO: data_ingestion: artifacts/data_ingestion/data.zip downloaded successfully, with info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: AAFE:36112D:710A6C:7EC619:67C9ABBF
+Accept-Ranges: bytes
+Date: Thu, 06 Mar 2025 14:26:37 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad2200134-MAD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1741271197.195253,VS0,VE194
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: be887f810b026c2cb47cb53262897d32ead65c3a
+Expires: Thu, 06 Mar 2025 14:31:37 GMT
+Source-Age: 0
+
+
+2025-03-06 15:26:37,415: INFO: main: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x
+2025-03-06 15:26:37,416: INFO: main: >>>>>> Stage Data Validation Stage started <<<<<<
+2025-03-06 15:26:37,419: INFO: common: Reading yaml file from config\config.yaml
+2025-03-06 15:26:37,421: INFO: common: Reading yaml file from params.yaml
+2025-03-06 15:26:37,422: INFO: common: Reading yaml file from schema.yaml
+2025-03-06 15:26:37,423: INFO: common: Created directory: artifacts
+2025-03-06 15:26:37,424: INFO: common: Created directory: artifacts/data_validation
+2025-03-06 15:26:37,453: INFO: main: >>>>>> Stage Data Validation Stage completed <<<<<<
+
+x==========x
+2025-03-06 15:26:37,453: INFO: main: >>>>>> Stage Data Transformation Stage started <<<<<<
+2025-03-06 15:26:37,456: INFO: common: Reading yaml file from config\config.yaml
+2025-03-06 15:26:37,457: INFO: common: Reading yaml file from params.yaml
+2025-03-06 15:26:37,460: INFO: common: Reading yaml file from schema.yaml
+2025-03-06 15:26:37,461: INFO: common: Created directory: artifacts
+2025-03-06 15:26:37,462: INFO: common: Created directory: artifacts/data_transformation
+2025-03-06 15:26:37,496: INFO: data_transformation: Data splitting is done.
+2025-03-06 15:26:37,496: INFO: data_transformation: Train shape: (1279, 12), Test shape: (320, 12)
+2025-03-06 15:26:37,498: INFO: main: >>>>>> Stage Data Transformation Stage completed <<<<<<
+
+x==========x
+2025-03-06 15:26:37,499: INFO: main: >>>>>> Stage Model Training Stage started <<<<<<
+2025-03-06 15:26:37,502: INFO: common: Reading yaml file from config\config.yaml
+2025-03-06 15:26:37,504: INFO: common: Reading yaml file from params.yaml
+2025-03-06 15:26:37,506: INFO: common: Reading yaml file from schema.yaml
+2025-03-06 15:26:37,507: INFO: common: Created directory: artifacts
+2025-03-06 15:26:37,508: INFO: common: Created directory: artifacts/model_trainer
+2025-03-06 15:26:37,532: INFO: main: >>>>>> Stage Model Training Stage completed <<<<<<
+
+x==========x
+2025-03-06 15:26:37,533: INFO: main: >>>>>> Stage Model Evaluation Stage started <<<<<<
+2025-03-06 15:26:37,536: INFO: common: Reading yaml file from config\config.yaml
+2025-03-06 15:26:37,537: INFO: common: Reading yaml file from params.yaml
+2025-03-06 15:26:37,539: INFO: common: Reading yaml file from schema.yaml
+2025-03-06 15:26:37,540: INFO: common: Created directory: artifacts
+2025-03-06 15:26:37,540: INFO: common: Created directory: artifacts/model_evaluation
+2025-03-06 15:26:39,458: INFO: common: Json file saved to artifacts\model_evaluation\metrics.json
+2025-03-06 15:26:48,416: INFO: main: >>>>>> Stage Model Evaluation Stage completed <<<<<<
+
+x==========x
