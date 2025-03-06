@@ -15,7 +15,7 @@ def homePage():
 @app.route('/train',methods=['GET'])  # route to train the pipeline
 def training():
     os.system("python main.py")
-    return "Training Successful!" 
+    return render_template('train.html')
 
 
 @app.route('/predict',methods=['POST','GET']) # route to show the predictions in a web UI

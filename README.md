@@ -112,11 +112,11 @@ python app.py
 ## 🌐 How to Use the Web Application
 Once the application is running, follow these steps:
 
-1. **Access the main page**: Open your browser and go to `http://127.0.0.1:5000/`.
-2. **Train the model**: Navigate to `http://127.0.0.1:5000/train`. This will execute the full pipeline, from data ingestion to model training.
-3. **Return to the main page**: Go back to `http://127.0.0.1:5000/`.
+1. **Access the main page**: Open your browser and go to `http://127.0.0.1:8080/`.
+2. **Train the model**: Navigate to `http://127.0.0.1:8080/train`. This will execute the full pipeline, from data ingestion to model training.
+3. **Return to the main page**: Go back to `http://127.0.0.1:8080/`.
 4. **Make a prediction**: Enter values for each variable in the form and click on the `Predict` button.
-5. **View the result**: The application will redirect you to `http://127.0.0.1:5000/predict`, where the predicted outcome will be displayed.
+5. **View the result**: The application will redirect you to `http://127.0.0.1:8080/predict`, where the predicted outcome will be displayed.
 
 ## 📈 Experiment Tracking with DagsHub & MLFlow
 All executions of the model are tracked using **MLFlow** and are accessible through the **Experiments** section of **DagsHub**. This allows users to:

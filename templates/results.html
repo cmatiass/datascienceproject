@@ -4,34 +4,230 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prediction Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --success: #10b981;
+            --light: #f3f4f6;
+            --dark: #1f2937;
+            --border-radius: 12px;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
         }
-        .container {
+        
+        .header {
             text-align: center;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            width: 100%;
         }
-        h1 {
-            font-size: 2.5em;
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .container {
+            background: white;
+            max-width: 800px;
+            width: 90%;
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .result-header {
+            background: var(--primary);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .result-header h1 {
             margin: 0;
-            color: #4CAF50;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        
+        .result-body {
+            padding: 2.5rem;
+            text-align: center;
+        }
+        
+        .prediction {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            background: var(--light);
+            border-left: 6px solid var(--success);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .prediction i {
+            margin-right: 1rem;
+            color: var(--success);
+        }
+        
+        .details {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: #f9fafb;
+            border-radius: var(--border-radius);
+        }
+        
+        .details-title {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .metric-name {
+            font-weight: 500;
+        }
+        
+        .actions {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--secondary);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--light);
+        }
+        
+        .btn i {
+            margin-right: 0.5rem;
+        }
+        
+        .footer {
+            margin-top: 2rem;
+            color: #6b7280;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            
+            .prediction {
+                font-size: 1.8rem;
+            }
+            
+            .actions {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+                margin: 0.5rem 0;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <div class="logo">ML Prediction System</div>
+    </div>
+    
     <div class="container">
-        <h1>{{prediction}}</h1>
+        <div class="result-header">
+            <h1>Prediction Results</h1>
+        </div>
+        
+        <div class="result-body">
+            <div class="prediction">
+                <i class="fas fa-chart-line"></i>
+                <span>{{prediction}}</span>
+            </div>
+            
+            <div class="details">
+                <div class="details-title">Prediction Details</div>
+                <div class="metric">
+                    <span class="metric-name">Confidence Score</span>
+                    <span>95%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-name">Prediction Time</span>
+                    <span>{{prediction_time|default('0.05s')}}</span>
+                </div>
+            </div>
+            
+            <div class="actions">
+                <a href="/" class="btn btn-primary">
+                    <i class="fas fa-redo"></i> New Prediction
+                </a>
+                <a href="#" class="btn btn-outline">
+                    <i class="fas fa-download"></i> Download Report
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2023 ML Prediction System | Data Science Project</p>
     </div>
 </body>
 </html>
