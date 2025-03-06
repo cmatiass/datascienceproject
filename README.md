@@ -85,7 +85,6 @@ To replicate this project, follow these steps:
 - 💾 Joblib (for model serialization)
 - ⚙️ PyYAML (for configuration management)
 - 📜 Logging (for application logs)
-- 🐳 Docker (for containerization)
 - 🛠️ **DagsHub & MLFlow** (for experiment tracking and reproducibility)
 
 ## ▶️ How to Run
