@@ -1,4 +1,5 @@
 # 🚀 Data Science Project - Structured ML Pipeline
+![image](https://github.com/user-attachments/assets/34a34a45-5173-4f2d-9db7-224253adf402)
 
 ## 📌 Overview
 This project focuses on the proper structuring of a Data Science pipeline. It is designed to ensure modularity by breaking down different stages of machine learning workflows into separate modules. The pipeline is executed in the following stages:
